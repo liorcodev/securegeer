@@ -1,0 +1,60 @@
+{
+  "name": "securegeer",
+  "version": "1.0.0",
+  "description": "Web Crypto utilities: AES-GCM encryption, JWT, HMAC and hashing, with key rotation support",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./encryption": {
+      "types": "./dist/encryption/index.d.ts",
+      "default": "./dist/encryption/index.js"
+    },
+    "./jwt": {
+      "types": "./dist/jwt/index.d.ts",
+      "default": "./dist/jwt/index.js"
+    },
+    "./hash": {
+      "types": "./dist/hash/index.d.ts",
+      "default": "./dist/hash/index.js"
+    },
+    "./hmac": {
+      "types": "./dist/hmac/index.d.ts",
+      "default": "./dist/hmac/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "encryption",
+    "aes-gcm",
+    "jwt",
+    "hmac",
+    "hash",
+    "webcrypto",
+    "key-rotation",
+    "cloudflare-workers"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3"
+  }
+}
