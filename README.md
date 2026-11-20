@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/securegeer-logo-full.png" alt="SecureGeer - Web Crypto Utilities" width="200" />
+  <img src="https://raw.githubusercontent.com/liorcodev/securegeer/main/assets/securegeer-logo-full.png" alt="SecureGeer - Web Crypto Utilities" width="200" />
 </p>
 
 <p align="center">

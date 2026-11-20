@@ -52,6 +52,14 @@
     "cloudflare-workers"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liorcodev/securegeer.git"
+  },
+  "homepage": "https://github.com/liorcodev/securegeer#readme",
+  "bugs": {
+    "url": "https://github.com/liorcodev/securegeer/issues"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "^3.10.1",
