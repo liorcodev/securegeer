@@ -1,6 +1,6 @@
 {
   "name": "securegeer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Crypto utilities: AES-GCM encryption, JWT, HMAC and hashing, with key rotation support",
   "type": "module",
   "sideEffects": false,
@@ -52,6 +52,10 @@
     "cloudflare-workers"
   ],
   "license": "MIT",
+  "author": {
+    "name": "liorcodev",
+    "url": "https://github.com/liorcodev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liorcodev/securegeer.git"
